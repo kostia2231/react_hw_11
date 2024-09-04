@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import styles from "../../components/main.module.css";
 
 const articles = [
@@ -9,8 +9,13 @@ const articles = [
 ];
 
 export default function Article() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const article = articles.find((article) => article.id === parseInt(id));
+
+  function handleNavigate() {
+    navigate("/articles");
+  }
 
   return (
     <div className={styles.article}>
@@ -24,7 +29,7 @@ export default function Article() {
           <p>Post not found</p>
         )}
       </div>
-      <Link to={"/articles"}>Назад</Link>
+      <button onClick={handleNavigate}>Назад</button>
     </div>
   );
 }
