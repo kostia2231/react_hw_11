@@ -1,0 +1,55 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid black;
+  margin: 10px 0 10px 0;
+}
+.mainWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border-bottom: 1px solid black;
+  margin: 0 10px 0 10px;
+}
+
+.articlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.article {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.article a {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.article a:hover {
+  background-color: rgb(190, 190, 190);
+  color: black;
+  transition: 0.4s ease;
+}
+
+.article a:active {
+  background-color: black;
+  color: white;
+}
+
+.link:hover {
+  color: rgb(190, 190, 190);
+  transition: 0.4s ease;
+}
+.link:hover {
+  color: rgb(190, 190, 190);
+  transition: 0.4s ease;
+}

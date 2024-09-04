@@ -3,7 +3,9 @@ import React from "react";
 export default function Main() {
   return (
     <>
-      <div>this is Main page</div>
+      <div>
+        Привет! <br /> Это главная страница.
+      </div>
     </>
   );
 }

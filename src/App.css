@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+*:visited {
+  color: inherit;
+}
+
+.active-link {
+  color: rgb(190, 190, 190);
+}
+
+.link:hover {
+  color: rgb(190, 190, 190);
+  transition: 0.4s ease;
+}
